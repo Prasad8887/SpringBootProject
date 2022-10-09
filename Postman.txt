@@ -1,0 +1,133 @@
+GET localhost:8080/patient/list
+
+[
+    {
+        "patient_id": 1,
+        "patient_name": "Harshada",
+        "patient_address": "Pune",
+        "patient_gender": "Female",
+        "patient_disease": "Cold",
+        "patient_email_id": "Harshada@gmail.com",
+        "patient_contact_number": 906776
+    },
+    {
+        "patient_id": 2,
+        "patient_name": "Harsha",
+        "patient_address": "Pune",
+        "patient_gender": "Female",
+        "patient_disease": "Cold",
+        "patient_email_id": "Harsha@gmail.com",
+        "patient_contact_number": 906776
+    }
+]
+----------------------------------------------------------------------------------------
+GET localhost:8080/patient/findbyid/1
+
+ {
+        "patient_id": 1,
+        "patient_name": "Harshada",
+        "patient_address": "Pune",
+        "patient_gender": "Female",
+        "patient_disease": "Cold",
+        "patient_email_id": "Harshada@gmail.com",
+        "patient_contact_number": 906776
+    }
+------------------------------------------------------------------------------------------
+POST localhost:8080/patient/save
+
+{
+        "patient_id": 3,
+        "patient_name": "Harsha",
+        "patient_address": "Saswad",
+        "patient_gender": "Female",
+        "patient_disease": "Cold",
+        "patient_email_id": "Harsha20@gmail.com",
+        "patient_contact_number": 86005
+    }
+--------------------------------------------------------------------------------------
+PUT localhost:8080/patient/update
+
+{
+        "patient_id": 1,
+        "patient_name": "HarshadaVC",
+        "patient_address": "Pune",
+        "patient_gender": "Female",
+        "patient_disease": "Cold",
+        "patient_email_id": "Harshada@gmail.com",
+        "patient_contact_number": 906776
+    }
+--------------------------------------------------------------------------------------
+DELETE localhost:8080/patient/delete/1
+
+patient_id1
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+GET localhost:8080/doctor/list
+
+[
+    {
+        "doctor_id": 1,
+        "doctor_experience": 4,
+        "doctor_contact_number": 72620,
+        "doctor_designation": "Surgery",
+        "doctor_email_id": "poonam@gmail.com",
+        "doctor_address": "Saswad",
+        "doctor_name": "Poonam",
+        "doctor_degree": "BHMS"
+    },
+    {
+        "doctor_id": 2,
+        "doctor_experience": 2,
+        "doctor_contact_number": 72620,
+        "doctor_designation": "Surgery",
+        "doctor_email_id": "prasad@gmail.com",
+        "doctor_address": "Saswad",
+        "doctor_name": "Prasad",
+        "doctor_degree": "MD"
+    }
+]
+-------------------------------------------------------------------------------------------------
+GET localhost:8080/doctor/findbyid/1
+
+{
+        "doctor_id": 1,
+        "doctor_experience": 4,
+        "doctor_contact_number": 72620,
+        "doctor_designation": "Surgery",
+        "doctor_email_id": "poonam@gmail.com",
+        "doctor_address": "Saswad",
+        "doctor_name": "Poonam",
+        "doctor_degree": "MBBS"
+    }
+------------------------------------------------------------------------------------------------
+POST localhost:8080/doctor/save
+
+{
+        "doctor_id": 3,
+        "doctor_experience": 4,
+        "doctor_contact_number": 72620,
+        "doctor_designation": "Surgery",
+        "doctor_email_id": "ravi@gmail.com",
+        "doctor_address": "saswad",
+        "doctor_name": "ravi",
+        "doctor_degree": "BHMS"
+    }
+-----------------------------------------------------------------------------------------------
+PUT localhost:8080/doctor/update
+
+{
+        "doctor_id": 2,
+        "doctor_experience": 5,
+        "doctor_designation": "Surgery",
+        "doctor_contact_number": 860054,
+        "doctor_name": "Prasad",
+        "doctor_address": "Saswad",
+        "doctor_degree": "MD",
+        "doctor_email_id": "prasad20@gmail.com"
+    }
+-----------------------------------------------------------------------------------------------------
+DELETE localhost:8080/doctor/delete/3
+
+doctor_id3
+
